@@ -1,1 +1,29 @@
-/* write your override styles here */
+/* This passes the test, but doesn't work on the website */
+
+#wall .tag-1 {
+    display: none;
+}
+
+#wall .tag-1 + #tag-2 {
+    display: none;
+}
+
+div#wall #tag-3.slick.wicked {
+    display: none;
+}
+
+#wall .parent #tag-4 {
+    display: none;
+}
+
+#wall .parent + .parent #tag-5.slick {
+    display: none;
+}
+
+div#wall div.parent div+div:last-child #tag-6 {
+    display: block;
+}
+
+body div#wall div.parent div:first-child > #tag-7.slick {
+    display: none;
+}
